@@ -1,0 +1,311 @@
+01 STRING FUNCTION
+
+
++*In[2]:*+
+[source, ipython3]
+----
+designation = "I am a data analyst"
+----
+
+
++*In[4]:*+
+[source, ipython3]
+----
+designation.index ("analyst")
+----
+
+
++*Out[4]:*+
+----12----
+
+
++*In[5]:*+
+[source, ipython3]
+----
+designation.split ("a")
+----
+
+
++*Out[5]:*+
+----['I ', 'm ', ' d', 't', ' ', 'n', 'lyst']----
+
+
++*In[7]:*+
+[source, ipython3]
+----
+"unproductive lockdown days".replace ("unproductive","skillful")
+----
+
+
++*Out[7]:*+
+----'skillful lockdown days'----
+
+
++*In[8]:*+
+[source, ipython3]
+----
+designation.find ("a")
+----
+
+
++*Out[8]:*+
+----2----
+
+
++*In[9]:*+
+[source, ipython3]
+----
+designation = "i am a data analyst"
+----
+
+
++*In[10]:*+
+[source, ipython3]
+----
+designation.capitalize()
+----
+
+
++*Out[10]:*+
+----'I am a data analyst'----
+
+02 LIST FUNCTION
+
+
++*In[5]:*+
+[source, ipython3]
+----
+lst= [1,2,3, "saurav", 11.2, 22.3]
+----
+
+
++*In[6]:*+
+[source, ipython3]
+----
+lst.append(10)
+----
+
+
++*In[7]:*+
+[source, ipython3]
+----
+lst
+----
+
+
++*Out[7]:*+
+----[1, 2, 3, 'saurav', 11.2, 22.3, 10]----
+
+
++*In[8]:*+
+[source, ipython3]
+----
+lst.insert(1, "or")
+----
+
+
++*In[9]:*+
+[source, ipython3]
+----
+lst
+----
+
+
++*Out[9]:*+
+----[1, 'or', 2, 3, 'saurav', 11.2, 22.3, 10]----
+
+
++*In[10]:*+
+[source, ipython3]
+----
+lst.extend([11, 12, 99])
+----
+
+
++*In[11]:*+
+[source, ipython3]
+----
+lst
+----
+
+
++*Out[11]:*+
+----[1, 'or', 2, 3, 'saurav', 11.2, 22.3, 10, 11, 12, 99]----
+
+
++*In[12]:*+
+[source, ipython3]
+----
+lst.reverse()
+----
+
+
++*In[13]:*+
+[source, ipython3]
+----
+lst
+----
+
+
++*Out[13]:*+
+----[99, 12, 11, 10, 22.3, 11.2, 'saurav', 3, 2, 'or', 1]----
+
+
++*In[14]:*+
+[source, ipython3]
+----
+lst.count(1)
+----
+
+
++*Out[14]:*+
+----1----
+
+03 DICTONARY FUNCTION
+
+
++*In[15]:*+
+[source, ipython3]
+----
+ditPosition={"Name": "Anie", "Post": "Div Head", "Achieved": "2.50"}
+----
+
+
++*In[16]:*+
+[source, ipython3]
+----
+ditPosition
+----
+
+
++*Out[16]:*+
+----{'Name': 'Anie', 'Post': 'Div Head', 'Achieved': '2.50'}----
+
+
++*In[21]:*+
+[source, ipython3]
+----
+ditPosition.get("Achieved")
+----
+
+
++*Out[21]:*+
+----'2.50'----
+
+
++*In[23]:*+
+[source, ipython3]
+----
+print(ditPosition)
+----
+
+
++*Out[23]:*+
+----
+{'Name': 'Anie', 'Post': 'Div Head', 'Achieved': '2.50'}
+----
+
+
++*In[26]:*+
+[source, ipython3]
+----
+ditPosition.clear()
+----
+
+
++*In[39]:*+
+[source, ipython3]
+----
+ditPosition
+----
+
+
++*Out[39]:*+
+----{}----
+
+
++*In[29]:*+
+[source, ipython3]
+----
+Salary={"Sam":"1.5", "Xyz":"5.2", "Barkha":"2.9"}
+----
+
+
++*In[40]:*+
+[source, ipython3]
+----
+Salary
+----
+
+
++*Out[40]:*+
+----{'Sam': '1.5', 'Xyz': '5.2'}----
+
+
++*In[41]:*+
+[source, ipython3]
+----
+(Salary.items())
+----
+
+
++*Out[41]:*+
+----dict_items([('Sam', '1.5'), ('Xyz', '5.2')])----
+
+
++*In[33]:*+
+[source, ipython3]
+----
+Salary.popitem()
+----
+
+
++*Out[33]:*+
+----('Barkha', '2.9')----
+
+
++*In[42]:*+
+[source, ipython3]
+----
+Salary
+----
+
+
++*Out[42]:*+
+----{'Sam': '1.5', 'Xyz': '5.2'}----
+
+
++*In[36]:*+
+[source, ipython3]
+----
+Employee={"Ashish": "M", "Suneha":"F", "Barkha":"F"}
+----
+
+
++*In[37]:*+
+[source, ipython3]
+----
+Employee
+----
+
+
++*Out[37]:*+
+----{'Ashish': 'M', 'Suneha': 'F', 'Barkha': 'F'}----
+
+
++*In[44]:*+
+[source, ipython3]
+----
+(Employee.keys())
+----
+
+
++*Out[44]:*+
+----dict_keys(['Ashish', 'Suneha', 'Barkha'])----
+
+
++*In[ ]:*+
+[source, ipython3]
+----
+
+----
